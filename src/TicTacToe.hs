@@ -1,4 +1,13 @@
-module TicTacToe where
+module TicTacToe
+  (
+    size
+  , Player
+  , Cell
+  , Board
+  , emptyBoard
+  , move
+  , bestMove
+  ) where
 
 import Prelude hiding (all, elem, head, flip, map, maximum, minimum, tail)
 import Data.Maybe
