@@ -70,7 +70,7 @@ winner b
        | line /= Nothing                    = (cellToPlayer $ head (fromJust line))
        | Empty `elem` (getMatrixAsVector b) = None
        | otherwise                          = NoneAndDraw
-       where line = find (allEqual Empty) (boardVector b)
+       where line = find (allEqual) (boardVector b)
 
 eval :: Player -> Board -> Int
 eval player board
